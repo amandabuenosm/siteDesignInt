@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #888369;
+    background-color: #4b4839;
     padding: 5px 0;
     display: flex;
     justify-content: space-between;
@@ -26,4 +26,35 @@ nav a {
     color: #FFFFFF;
     font-size: 22px;
     padding: 12px;
+}
+
+.inicio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.subtitulo-home {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #0000009f;
+}
+
+.subtitulo-home h2, .subtitulo-home p {
+    width: 70%;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
 }
