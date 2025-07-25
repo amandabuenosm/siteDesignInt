@@ -52,9 +52,80 @@ nav a {
     background-color: #0000009f;
 }
 
-.subtitulo-home h2, .subtitulo-home p {
+.subtitulo-home h2,
+.subtitulo-home p {
     width: 70%;
     font-size: 30px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.title-services {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    color: #4b4839;
+    text-decoration: underline;
+}
+
+.services {
+    background-color: #f3ead4;
+}
+
+.card-services {
+    padding: 0 8%;
+    gap: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #4b4839;
+}
+
+.services img {
+    object-fit: cover;
+    height: 65vh;
+    width: auto;
+}
+
+.especialidades h2 {
+    font-size: 27px;
+    text-align: center;
+}
+
+.grid-especialidade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 5% 0;
+    text-align: center;
+}
+
+.grid-especialidade div {
+    background-color: #b8a77c;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px #000000;
+}
+
+.grid-especialidade div:hover {
+    background-color: #a6986759;
+}
+
+.grid-especialidade i {
+    font-size: 50px;
+    padding-top: 18px;
+    color: #4b4839;
+}
+
+.grid-especialidade h1 {
+    padding-top: 8px;
+    font-size: 24px;
+}
+
+.grid-especialidade h4 {
+    font-size: 19px;
+    margin-top: 10px;
+    padding: 8px;
 }
