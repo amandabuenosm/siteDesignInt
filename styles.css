@@ -83,7 +83,8 @@ nav a {
 
 .services img {
     object-fit: cover;
-    height: 65vh;
+    height: 60vh;
+    padding-bottom: 50px;
     width: auto;
 }
 
@@ -94,7 +95,7 @@ nav a {
 
 .grid-especialidade {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 5% 0;
     text-align: center;
@@ -143,8 +144,37 @@ nav a {
 }
 
 .grid-portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 2%;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.grid-portfolio .item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.grid-portfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-portfolio .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #000000bb; 
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  opacity: 0;
+}
+
+.grid-portfolio .item:hover .overlay {
+  opacity: 1;
 }
