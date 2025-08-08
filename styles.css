@@ -60,7 +60,7 @@ nav a {
     color: #FFFFFF;
 }
 
-.title-services {
+.title-services, .title-sobre, .title-portfolio {
     text-align: center;
     padding: 20px;
     font-size: 25px;
@@ -68,11 +68,16 @@ nav a {
     text-decoration: underline;
 }
 
-.services {
+.services, .sobre {
     background-color: #f3ead4;
 }
 
-.card-services {
+section {
+    min-height: 100vh;
+    padding: 0;
+}
+
+.card-services, .card-sobrenos {
     padding: 0 8%;
     gap: 8%;
     display: flex;
@@ -81,7 +86,7 @@ nav a {
     color: #4b4839;
 }
 
-.services img {
+.services img, .card-sobrenos img {
     object-fit: cover;
     height: 60vh;
     width: auto;
@@ -106,6 +111,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
     box-shadow: 0 2px 5px #000000;
 }
 
@@ -119,34 +125,29 @@ nav a {
     color: #4b4839;
 }
 
-.grid-especialidade h1 {
-    padding-top: 8px;
-    font-size: 24px;
-}
-
 .grid-especialidade h4 {
-    font-size: 19px;
+    font-size: 20px;
     margin-top: 10px;
     padding: 8px;
 }
 
-.title-portfolio {
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-    color: #4b4839;
+.title-portfolio p {
+    padding-top: 20px;
 }
 
-.title-portfolio h1 {
-    text-decoration: underline;
-    padding-bottom: 20px;
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 5%;
 }
 
 .grid-portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3%;
-    padding: 2.5%;
+    gap: 30px;
+    width: 100%;
+    margin: auto;
 }
 
 .grid-portfolio .item {
